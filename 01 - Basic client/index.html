@@ -38,10 +38,12 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
-      var clientId = 'xxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com';
-      var apiKey = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
-      var scopes = 'https://www.googleapis.com/auth/gmail.readonly';
-
+      var clientId = '349279416143-r6abkg3rhm07dl0omjqc11tn87qm7vk3.apps.googleusercontent.com';
+      var apiKey = 'AIzaSyAYH13VxjikhPkqEoGumXa6_OP4ot0ayEw';
+      var scopes =
+          'https://www.googleapis.com/auth/gmail.readonly '+
+          'https://www.googleapis.com/auth/gmail.send';
+      
       function handleClientLoad() {
         gapi.client.setApiKey(apiKey);
         window.setTimeout(checkAuth, 1);
